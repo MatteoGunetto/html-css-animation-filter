@@ -63,6 +63,10 @@
 .ex-7-img{
     width: 500px;
 }
+.ex-7-img:hover{
+    filter: grayscale(.6) sepia(.5);
+
+}
 .ex-8-img{
     width: 500px;
     transition: 2s;
@@ -84,9 +88,31 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear infinite;
 }
-.ex-11-icon {
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+.ex-11-icon{
     font-size: 60px;
+}
+
+.ex-11-icon:hover {
+    animation: girapoco 2s linear;
+}
+
+@keyframes girapoco {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
